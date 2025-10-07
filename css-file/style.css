@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shadow{
+    box-shadow: #e77bfa 0 0 80px 15px;
+}
+
+/* header section */
+.header-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: #c3c3c3 0 0.1px 3px 0.1px;
+}
+
+/* navbar left section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 10px 80px;
+}
+
+.navbar .left{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .left #zepto{
+    width: 100px;
+}
+
+.navbar .left .toggle-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d5d5;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.navbar .left .toggle-btn .backgroung-toggle{
+    position: absolute;
+    background-color: #8f8f8f;
+    width: 84px;
+    height: 33px;
+    border-radius: 20px;
+}
+
+.navbar .left .toggle-btn .toggle-circle{
+    position: absolute;
+    background-color: #ffffff;
+    width: 28px;
+    left: 6px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.navbar .left #city-location{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* navbar center section */
+.navbar .center{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .center #search{
+    position: absolute;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar .center #input1{
+    height: 45px;
+    width: 750px;
+    border-radius: 10px;
+    border: 0.2px solid #d4d4d4;
+    padding: 0 30px 0 40px;
+}
+
+/* navbar right section */
+.navbar .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar .right .login,
+.navbar .right .cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .right .login p,
+.navbar .right .cart p{
+    font-size: 12px;
+}
+
+.navbar .right .login #user,
+.navbar .right .cart #cart-logo{
+    width: 30px;
+}
+
+/*  Choose Container */
+.choose-section{
+    padding: 30px 0 10px 100px;
+}
+
+.choose-section ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+.choose-section ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8a8a8a;
+    font-size: 18px;
+    gap: 5px;
+}
+
+.choose-section ul li a img{
+    width: 25px;
+}
+
+.choose-section ul li a:hover{
+    color: #c049fc;
+}
+
+/* <---------- img hover ----------> */
+.choose-section ul li a:hover #shop {
+  content: url("/images/shop-logo2.png");
+}
+
+.choose-section ul li a:hover #cafe {
+  content: url("/images/cafe-logo2.png");
+}
+
+.choose-section ul li a:hover #home {
+  content: url("/images/home-logo2.png");
+}
+
+.choose-section ul li a:hover #toys {
+  content: url("/images/toy-logo2.png");
+}
+
+.choose-section ul li a:hover #fresh {
+  content: url("/images/fresh-logo2.png");
+}
+
+.choose-section ul li a:hover #music {
+  content: url("/images/music-logo2.png");
+}
+
+.choose-section ul li a:hover #mobile {
+  content: url("/images/mobile-logo2.png");
+}
+
+.choose-section ul li a:hover #beauty {
+  content: url("/images/beauty-logo2.png");
+}
+
+.choose-section ul li a:hover #fashion {
+  content: url("/images/fashion-logo2.png");
+}
+
+/* <----- Select Section -----> */
+.select-section{
+    display: flex;
+    justify-content: center;
+    padding: 30px 100px 20px 100px;
+    overflow: hidden;
+    margin-top: 140px;
+}
+
+.select-section ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.select-section ul li img{
+    width: 95px;
+}
+
+/* <----- hero section -----> */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+}
+
+.hero-container .hero-section1{
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.hero-container .hero-section2{
+    background-color: #ffd0d8;
+    border-radius: 20px;
+}
+
+.hero-container .hero-section1 img,
+.hero-container .hero-section2 img{
+    width: 44vw;
+}
+
+.hero-container .hero-section1 .hero1-img,
+.hero-container .hero-section2 .hero2-img{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.hero-container .hero-section1 .hero1-img img,
+.hero-container .hero-section2 .hero2-img img{
+    width: 120px;
+}
+
+/* bottom image section */
+.bottom-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bottom-image img{
+    border-radius: 20px;
+}
+
+/* bottom upper area section */
+.bottom-upper-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0 50px 0;
+}
+
+.bottom-upper-area .bottom-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.bottom-upper-area h2{
+    font-size: 1.2rem;
+}
+
+.bottom-upper-area .bottom-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 35px;
+    box-shadow: #cdcdcd 0px 0px 10px 0.1px;
+}
+
+.bottom-upper-area .bottom-container .box h3{
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.bottom-upper-area .bottom-container .box p{
+    font-size: 0.8rem;
+}
+
+/* line create */
+.line-section{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    width: 90vw;
+    border: 0.5px solid #bfbebe;
+}
+
+/* search section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+}
+
+.search-section .search-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-section .search-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.search-section .search-container p {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    color: #616161;
+    margin: 5px 0;
+}
+
+.search-section .search-container strong {
+    color: #000;
+}
+
+.search-section .search-container a {
+    text-decoration: none;
+    color: #616161; /* purple-ish */
+    transition: color 0.3s ease;
+}
+
+.search-section .search-container a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Categories Section */
+.categories-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+}
+
+.categories-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categories-section .categories-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.categories-container .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+}
+
+.categories-container .categories-grid ul {
+    list-style: none;
+}
+
+.categories-container .categories-grid li {
+    margin: 20px 0 20px 0;
+}
+
+.categories-container .categories-grid a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* footer bottom section */
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 90px 100px 90px;
+}
+
+.bottom-section .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom-section .info img{
+    width: 120px;
+}
+
+.bottom-section .info .app{
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-section .info .app a img{
+    width: 20px;
+}
+
+.bottom-section .info .number{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #8c8c8c;
+}
+
+.bottom-section .line1 ul{
+    list-style: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.bottom-section .line1 ul li{
+    margin-bottom: 20px;
+}
+
+.bottom-section .apps{
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.bottom-section .apps .play-store,
+.bottom-section .apps .app-store{
+    border: 0.5px solid gray;
+    padding: 15px 45px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.bottom-section .apps .play-store a,
+.bottom-section .apps .app-store a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-weight: 550;
+    text-decoration: none;
+}
